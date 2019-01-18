@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346F00D021F20F9500673151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00CF21F20F9500673151 /* AppDelegate.swift */; };
+		346F00D221F20F9500673151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00D121F20F9500673151 /* ViewController.swift */; };
+		346F00D521F20F9500673151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F00D321F20F9500673151 /* Main.storyboard */; };
+		346F00D821F20F9500673151 /* Escarmoosh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 346F00D621F20F9500673151 /* Escarmoosh.xcdatamodeld */; };
+		346F00DA21F20F9700673151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346F00D921F20F9700673151 /* Assets.xcassets */; };
+		346F00DD21F20F9700673151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F00DB21F20F9700673151 /* LaunchScreen.storyboard */; };
+		346F00E821F20F9800673151 /* EscarmooshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00E721F20F9800673151 /* EscarmooshTests.swift */; };
+		346F00F321F20F9800673151 /* EscarmooshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00F221F20F9800673151 /* EscarmooshUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		346F00E421F20F9800673151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346F00C421F20F9500673151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346F00CB21F20F9500673151;
+			remoteInfo = Escarmoosh;
+		};
+		346F00EF21F20F9800673151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346F00C421F20F9500673151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346F00CB21F20F9500673151;
+			remoteInfo = Escarmoosh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		346F00CC21F20F9500673151 /* Escarmoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escarmoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		346F00CF21F20F9500673151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		346F00D121F20F9500673151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		346F00D421F20F9500673151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		346F00D721F20F9500673151 /* Escarmoosh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Escarmoosh.xcdatamodel; sourceTree = "<group>"; };
+		346F00D921F20F9700673151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		346F00DC21F20F9700673151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		346F00DE21F20F9700673151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346F00E321F20F9800673151 /* EscarmooshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscarmooshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		346F00E721F20F9800673151 /* EscarmooshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscarmooshTests.swift; sourceTree = "<group>"; };
+		346F00E921F20F9800673151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346F00EE21F20F9800673151 /* EscarmooshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscarmooshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		346F00F221F20F9800673151 /* EscarmooshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscarmooshUITests.swift; sourceTree = "<group>"; };
+		346F00F421F20F9800673151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		346F00C921F20F9500673151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346F00E021F20F9800673151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346F00EB21F20F9800673151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346F00C321F20F9500673151 = {
+			isa = PBXGroup;
+			children = (
+				346F00CE21F20F9500673151 /* Escarmoosh */,
+				346F00E621F20F9800673151 /* EscarmooshTests */,
+				346F00F121F20F9800673151 /* EscarmooshUITests */,
+				346F00CD21F20F9500673151 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		346F00CD21F20F9500673151 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				346F00CC21F20F9500673151 /* Escarmoosh.app */,
+				346F00E321F20F9800673151 /* EscarmooshTests.xctest */,
+				346F00EE21F20F9800673151 /* EscarmooshUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		346F00CE21F20F9500673151 /* Escarmoosh */ = {
+			isa = PBXGroup;
+			children = (
+				346F00CF21F20F9500673151 /* AppDelegate.swift */,
+				346F00D121F20F9500673151 /* ViewController.swift */,
+				346F00D321F20F9500673151 /* Main.storyboard */,
+				346F00D921F20F9700673151 /* Assets.xcassets */,
+				346F00DB21F20F9700673151 /* LaunchScreen.storyboard */,
+				346F00DE21F20F9700673151 /* Info.plist */,
+				346F00D621F20F9500673151 /* Escarmoosh.xcdatamodeld */,
+			);
+			path = Escarmoosh;
+			sourceTree = "<group>";
+		};
+		346F00E621F20F9800673151 /* EscarmooshTests */ = {
+			isa = PBXGroup;
+			children = (
+				346F00E721F20F9800673151 /* EscarmooshTests.swift */,
+				346F00E921F20F9800673151 /* Info.plist */,
+			);
+			path = EscarmooshTests;
+			sourceTree = "<group>";
+		};
+		346F00F121F20F9800673151 /* EscarmooshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				346F00F221F20F9800673151 /* EscarmooshUITests.swift */,
+				346F00F421F20F9800673151 /* Info.plist */,
+			);
+			path = EscarmooshUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		346F00CB21F20F9500673151 /* Escarmoosh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346F00F721F20F9800673151 /* Build configuration list for PBXNativeTarget "Escarmoosh" */;
+			buildPhases = (
+				346F00C821F20F9500673151 /* Sources */,
+				346F00C921F20F9500673151 /* Frameworks */,
+				346F00CA21F20F9500673151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Escarmoosh;
+			productName = Escarmoosh;
+			productReference = 346F00CC21F20F9500673151 /* Escarmoosh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		346F00E221F20F9800673151 /* EscarmooshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346F00FA21F20F9800673151 /* Build configuration list for PBXNativeTarget "EscarmooshTests" */;
+			buildPhases = (
+				346F00DF21F20F9800673151 /* Sources */,
+				346F00E021F20F9800673151 /* Frameworks */,
+				346F00E121F20F9800673151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				346F00E521F20F9800673151 /* PBXTargetDependency */,
+			);
+			name = EscarmooshTests;
+			productName = EscarmooshTests;
+			productReference = 346F00E321F20F9800673151 /* EscarmooshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		346F00ED21F20F9800673151 /* EscarmooshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346F00FD21F20F9800673151 /* Build configuration list for PBXNativeTarget "EscarmooshUITests" */;
+			buildPhases = (
+				346F00EA21F20F9800673151 /* Sources */,
+				346F00EB21F20F9800673151 /* Frameworks */,
+				346F00EC21F20F9800673151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				346F00F021F20F9800673151 /* PBXTargetDependency */,
+			);
+			name = EscarmooshUITests;
+			productName = EscarmooshUITests;
+			productReference = 346F00EE21F20F9800673151 /* EscarmooshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		346F00C421F20F9500673151 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = escarmoosh;
+				TargetAttributes = {
+					346F00CB21F20F9500673151 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					346F00E221F20F9800673151 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 346F00CB21F20F9500673151;
+					};
+					346F00ED21F20F9800673151 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 346F00CB21F20F9500673151;
+					};
+				};
+			};
+			buildConfigurationList = 346F00C721F20F9500673151 /* Build configuration list for PBXProject "Escarmoosh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 346F00C321F20F9500673151;
+			productRefGroup = 346F00CD21F20F9500673151 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				346F00CB21F20F9500673151 /* Escarmoosh */,
+				346F00E221F20F9800673151 /* EscarmooshTests */,
+				346F00ED21F20F9800673151 /* EscarmooshUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		346F00CA21F20F9500673151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346F00DD21F20F9700673151 /* LaunchScreen.storyboard in Resources */,
+				346F00DA21F20F9700673151 /* Assets.xcassets in Resources */,
+				346F00D521F20F9500673151 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346F00E121F20F9800673151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346F00EC21F20F9800673151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		346F00C821F20F9500673151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346F00D221F20F9500673151 /* ViewController.swift in Sources */,
+				346F00D021F20F9500673151 /* AppDelegate.swift in Sources */,
+				346F00D821F20F9500673151 /* Escarmoosh.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346F00DF21F20F9800673151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346F00E821F20F9800673151 /* EscarmooshTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346F00EA21F20F9800673151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346F00F321F20F9800673151 /* EscarmooshUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		346F00E521F20F9800673151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346F00CB21F20F9500673151 /* Escarmoosh */;
+			targetProxy = 346F00E421F20F9800673151 /* PBXContainerItemProxy */;
+		};
+		346F00F021F20F9800673151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346F00CB21F20F9500673151 /* Escarmoosh */;
+			targetProxy = 346F00EF21F20F9800673151 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		346F00D321F20F9500673151 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346F00D421F20F9500673151 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		346F00DB21F20F9700673151 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346F00DC21F20F9700673151 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		346F00F521F20F9800673151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		346F00F621F20F9800673151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		346F00F821F20F9800673151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Escarmoosh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.Escarmoosh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		346F00F921F20F9800673151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Escarmoosh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.Escarmoosh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		346F00FB21F20F9800673151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EscarmooshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.EscarmooshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Escarmoosh.app/Escarmoosh";
+			};
+			name = Debug;
+		};
+		346F00FC21F20F9800673151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EscarmooshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.EscarmooshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Escarmoosh.app/Escarmoosh";
+			};
+			name = Release;
+		};
+		346F00FE21F20F9800673151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EscarmooshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.EscarmooshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Escarmoosh;
+			};
+			name = Debug;
+		};
+		346F00FF21F20F9800673151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EscarmooshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.EscarmooshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Escarmoosh;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		346F00C721F20F9500673151 /* Build configuration list for PBXProject "Escarmoosh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346F00F521F20F9800673151 /* Debug */,
+				346F00F621F20F9800673151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346F00F721F20F9800673151 /* Build configuration list for PBXNativeTarget "Escarmoosh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346F00F821F20F9800673151 /* Debug */,
+				346F00F921F20F9800673151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346F00FA21F20F9800673151 /* Build configuration list for PBXNativeTarget "EscarmooshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346F00FB21F20F9800673151 /* Debug */,
+				346F00FC21F20F9800673151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346F00FD21F20F9800673151 /* Build configuration list for PBXNativeTarget "EscarmooshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346F00FE21F20F9800673151 /* Debug */,
+				346F00FF21F20F9800673151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		346F00D621F20F9500673151 /* Escarmoosh.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				346F00D721F20F9500673151 /* Escarmoosh.xcdatamodel */,
+			);
+			currentVersion = 346F00D721F20F9500673151 /* Escarmoosh.xcdatamodel */;
+			path = Escarmoosh.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 346F00C421F20F9500673151 /* Project object */;
+}
