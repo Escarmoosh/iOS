@@ -9,18 +9,37 @@ import Foundation
 
 
 public struct Skill: Codable {
-
+    
+    public init(from decoder: Decoder) throws {
+        
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        _id = try values.decode(String.self, forKey: ._id)
+        label = try values.decode(String.self, forKey: .label)
+        score = try values.decode(Double.self, forKey: .score)
+        value = try values.decode(Int.self, forKey: .value)
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(_id, forKey: ._id)
+        try container.encode(label, forKey: .label)
+        
+        try container.encode(score, forKey: .score)
+        try container.encode(value, forKey: .value)
+    }
 
     public var _id: String
 
     public var label: String
 
     /** card score for this skill &#x3D; Battle result  */
-    public var score: BigDecimal?
+    public var score: Double?
 
     /** use to create unique value for battle (id1 + id2 + value) */
     public var value: Int
-    public init(_id: String, label: String, score: BigDecimal?, value: Int) { 
+    public init(_id: String, label: String, score: Double?, value: Int) {
         self._id = _id
         self.label = label
         self.score = score

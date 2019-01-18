@@ -33,13 +33,14 @@ open class CardAPI {     /**
         let cardIdPreEscape = "\(cardId)"
         let cardIdPostEscape = cardIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
         path = path.replacingOccurrences(of: "{cardId}", with: cardIdPostEscape, options: .literal, range: nil)
-        let URLString = SwaggerClientAPI.basePath + path        let parameters: [String:Any]? = nil
+        let URLString = SwaggerClientAPI.basePath + path
+        let parameters: [String:Any]? = nil
 
         let url = URLComponents(string: URLString)
 
         let requestBuilder: RequestBuilder<Card>.Type = SwaggerClientAPI.requestBuilderFactory.getBuilder()
 
-        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: )
+        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }
 
 }

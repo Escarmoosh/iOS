@@ -9,6 +9,26 @@ import Foundation
 
 
 public struct Competence: Codable {
+    
+    public init(from decoder: Decoder) throws {
+        
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        _id = try values.decode(String.self, forKey: ._id)
+        label = try values.decode(Label.self, forKey: .label)
+        score = try values.decode(Double.self, forKey: .score)
+        skills = try values.decode([Skill].self, forKey: .skills)
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(_id, forKey: ._id)
+        try container.encode(label, forKey: .label)
+        
+        try container.encode(score, forKey: .score)
+        try container.encode(skills, forKey: .skills)
+    }
 
     public enum Label: String, Codable { 
         case attaque = "Attaque"
@@ -18,10 +38,10 @@ public struct Competence: Codable {
     public var label: Label
 
     /** card score for this competence &#x3D; Sum(Skill.score)  */
-    public var score: BigDecimal?
+    public var score: Double?
 
     public var skills: [Skill]
-    public init(_id: String, label: Label, score: BigDecimal?, skills: [Skill]) { 
+    public init(_id: String, label: Label, score: Double?, skills: [Skill]) {
         self._id = _id
         self.label = label
         self.score = score

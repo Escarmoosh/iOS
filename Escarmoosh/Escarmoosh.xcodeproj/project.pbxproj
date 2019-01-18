@@ -234,7 +234,6 @@
 				9FEE24EE4C33F1F27D5A6190 /* Pods-EscarmooshUITests.debug.xcconfig */,
 				33397CADA9DEC1094ACAA525 /* Pods-EscarmooshUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
