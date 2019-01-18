@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D2229842169A21503D364A /* Pods_EscarmooshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */; };
 		346F00D021F20F9500673151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00CF21F20F9500673151 /* AppDelegate.swift */; };
 		346F00D221F20F9500673151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00D121F20F9500673151 /* ViewController.swift */; };
 		346F00D521F20F9500673151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F00D321F20F9500673151 /* Main.storyboard */; };
@@ -15,6 +16,21 @@
 		346F00DD21F20F9700673151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346F00DB21F20F9700673151 /* LaunchScreen.storyboard */; };
 		346F00E821F20F9800673151 /* EscarmooshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00E721F20F9800673151 /* EscarmooshTests.swift */; };
 		346F00F321F20F9800673151 /* EscarmooshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F00F221F20F9800673151 /* EscarmooshUITests.swift */; };
+		346F011921F2172D00673151 /* CardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010621F2172C00673151 /* CardAPI.swift */; };
+		346F011A21F2172D00673151 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010721F2172C00673151 /* CodableHelper.swift */; };
+		346F011B21F2172D00673151 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010821F2172C00673151 /* APIs.swift */; };
+		346F011C21F2172D00673151 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010921F2172C00673151 /* Configuration.swift */; };
+		346F011D21F2172D00673151 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010A21F2172C00673151 /* AlamofireImplementations.swift */; };
+		346F011E21F2172D00673151 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010B21F2172D00673151 /* JSONEncodingHelper.swift */; };
+		346F011F21F2172D00673151 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010C21F2172D00673151 /* Extensions.swift */; };
+		346F012021F2172D00673151 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010D21F2172D00673151 /* Models.swift */; };
+		346F012121F2172D00673151 /* Competence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010F21F2172D00673151 /* Competence.swift */; };
+		346F012221F2172D00673151 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011021F2172D00673151 /* Card.swift */; };
+		346F012521F2172D00673151 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011321F2172D00673151 /* Skill.swift */; };
+		346F012721F2172D00673151 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011521F2172D00673151 /* APIHelper.swift */; };
+		346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011621F2172D00673151 /* JSONEncodableEncoding.swift */; };
+		754DD0757D2DCB4EF39854B4 /* Pods_Escarmoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC0E20604DE19FA4C240745 /* Pods_Escarmoosh.framework */; };
+		97DE9278FA7956FCFD043DA3 /* Pods_EscarmooshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E67EF77E3F44DD1A43873C2 /* Pods_EscarmooshUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		129DEF5AA2CF247A8AC33C2A /* Pods-EscarmooshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshTests.release.xcconfig"; path = "Target Support Files/Pods-EscarmooshTests/Pods-EscarmooshTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E67EF77E3F44DD1A43873C2 /* Pods_EscarmooshUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscarmooshUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33397CADA9DEC1094ACAA525 /* Pods-EscarmooshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshUITests.release.xcconfig"; path = "Target Support Files/Pods-EscarmooshUITests/Pods-EscarmooshUITests.release.xcconfig"; sourceTree = "<group>"; };
 		346F00CC21F20F9500673151 /* Escarmoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escarmoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346F00CF21F20F9500673151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346F00D121F20F9500673151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +68,25 @@
 		346F00EE21F20F9800673151 /* EscarmooshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscarmooshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		346F00F221F20F9800673151 /* EscarmooshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscarmooshUITests.swift; sourceTree = "<group>"; };
 		346F00F421F20F9800673151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346F010621F2172C00673151 /* CardAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPI.swift; sourceTree = "<group>"; };
+		346F010721F2172C00673151 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		346F010821F2172C00673151 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		346F010921F2172C00673151 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		346F010A21F2172C00673151 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		346F010B21F2172D00673151 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		346F010C21F2172D00673151 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		346F010D21F2172D00673151 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		346F010F21F2172D00673151 /* Competence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competence.swift; sourceTree = "<group>"; };
+		346F011021F2172D00673151 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		346F011321F2172D00673151 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		346F011521F2172D00673151 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		346F011621F2172D00673151 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		74DC773D175C90F0C88506D8 /* Pods-Escarmoosh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escarmoosh.release.xcconfig"; path = "Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh.release.xcconfig"; sourceTree = "<group>"; };
+		7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscarmooshTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0A5B38BA3A9D905605B5BC /* Pods-EscarmooshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshTests.debug.xcconfig"; path = "Target Support Files/Pods-EscarmooshTests/Pods-EscarmooshTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FA9AC73A2EA427C70DF4B57 /* Pods-Escarmoosh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escarmoosh.debug.xcconfig"; path = "Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh.debug.xcconfig"; sourceTree = "<group>"; };
+		9FEE24EE4C33F1F27D5A6190 /* Pods-EscarmooshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshUITests.debug.xcconfig"; path = "Target Support Files/Pods-EscarmooshUITests/Pods-EscarmooshUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDC0E20604DE19FA4C240745 /* Pods_Escarmoosh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escarmoosh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754DD0757D2DCB4EF39854B4 /* Pods_Escarmoosh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D2229842169A21503D364A /* Pods_EscarmooshTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DE9278FA7956FCFD043DA3 /* Pods_EscarmooshUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +124,8 @@
 				346F00E621F20F9800673151 /* EscarmooshTests */,
 				346F00F121F20F9800673151 /* EscarmooshUITests */,
 				346F00CD21F20F9500673151 /* Products */,
+				6AA2A2E4804A70A433A943E4 /* Pods */,
+				97757D06162CB7C80D973AEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +142,8 @@
 		346F00CE21F20F9500673151 /* Escarmoosh */ = {
 			isa = PBXGroup;
 			children = (
+				346F010221F2170700673151 /* APIGroup */,
+				346F010021F2112200673151 /* Scenes */,
 				346F00CF21F20F9500673151 /* AppDelegate.swift */,
 				346F00D121F20F9500673151 /* ViewController.swift */,
 				346F00D321F20F9500673151 /* Main.storyboard */,
@@ -128,6 +173,81 @@
 			path = EscarmooshUITests;
 			sourceTree = "<group>";
 		};
+		346F010021F2112200673151 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				346F010121F2126400673151 /* CommonCard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		346F010121F2126400673151 /* CommonCard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonCard;
+			sourceTree = "<group>";
+		};
+		346F010221F2170700673151 /* APIGroup */ = {
+			isa = PBXGroup;
+			children = (
+				346F010A21F2172C00673151 /* AlamofireImplementations.swift */,
+				346F011521F2172D00673151 /* APIHelper.swift */,
+				346F010321F2172C00673151 /* APIs */,
+				346F010821F2172C00673151 /* APIs.swift */,
+				346F010721F2172C00673151 /* CodableHelper.swift */,
+				346F010921F2172C00673151 /* Configuration.swift */,
+				346F010C21F2172D00673151 /* Extensions.swift */,
+				346F011621F2172D00673151 /* JSONEncodableEncoding.swift */,
+				346F010B21F2172D00673151 /* JSONEncodingHelper.swift */,
+				346F010E21F2172D00673151 /* Models */,
+				346F010D21F2172D00673151 /* Models.swift */,
+			);
+			path = APIGroup;
+			sourceTree = "<group>";
+		};
+		346F010321F2172C00673151 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				346F010621F2172C00673151 /* CardAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		346F010E21F2172D00673151 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				346F010F21F2172D00673151 /* Competence.swift */,
+				346F011021F2172D00673151 /* Card.swift */,
+				346F011321F2172D00673151 /* Skill.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6AA2A2E4804A70A433A943E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FA9AC73A2EA427C70DF4B57 /* Pods-Escarmoosh.debug.xcconfig */,
+				74DC773D175C90F0C88506D8 /* Pods-Escarmoosh.release.xcconfig */,
+				7A0A5B38BA3A9D905605B5BC /* Pods-EscarmooshTests.debug.xcconfig */,
+				129DEF5AA2CF247A8AC33C2A /* Pods-EscarmooshTests.release.xcconfig */,
+				9FEE24EE4C33F1F27D5A6190 /* Pods-EscarmooshUITests.debug.xcconfig */,
+				33397CADA9DEC1094ACAA525 /* Pods-EscarmooshUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		97757D06162CB7C80D973AEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDC0E20604DE19FA4C240745 /* Pods_Escarmoosh.framework */,
+				7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */,
+				2E67EF77E3F44DD1A43873C2 /* Pods_EscarmooshUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 346F00F721F20F9800673151 /* Build configuration list for PBXNativeTarget "Escarmoosh" */;
 			buildPhases = (
+				32B7B3E26F3D13A69B967B43 /* [CP] Check Pods Manifest.lock */,
 				346F00C821F20F9500673151 /* Sources */,
 				346F00C921F20F9500673151 /* Frameworks */,
 				346F00CA21F20F9500673151 /* Resources */,
+				BC89932CA4E0F3B186509A63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 346F00FA21F20F9800673151 /* Build configuration list for PBXNativeTarget "EscarmooshTests" */;
 			buildPhases = (
+				A7ECFD919645B31C35595D24 /* [CP] Check Pods Manifest.lock */,
 				346F00DF21F20F9800673151 /* Sources */,
 				346F00E021F20F9800673151 /* Frameworks */,
 				346F00E121F20F9800673151 /* Resources */,
@@ -170,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 346F00FD21F20F9800673151 /* Build configuration list for PBXNativeTarget "EscarmooshUITests" */;
 			buildPhases = (
+				9BD50D87AA1F334C39BC4D4C /* [CP] Check Pods Manifest.lock */,
 				346F00EA21F20F9800673151 /* Sources */,
 				346F00EB21F20F9800673151 /* Frameworks */,
 				346F00EC21F20F9800673151 /* Resources */,
@@ -254,13 +378,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32B7B3E26F3D13A69B967B43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Escarmoosh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD50D87AA1F334C39BC4D4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscarmooshUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7ECFD919645B31C35595D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscarmooshTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC89932CA4E0F3B186509A63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		346F00C821F20F9500673151 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346F012121F2172D00673151 /* Competence.swift in Sources */,
 				346F00D221F20F9500673151 /* ViewController.swift in Sources */,
+				346F012521F2172D00673151 /* Skill.swift in Sources */,
+				346F012021F2172D00673151 /* Models.swift in Sources */,
+				346F011A21F2172D00673151 /* CodableHelper.swift in Sources */,
+				346F011B21F2172D00673151 /* APIs.swift in Sources */,
+				346F012721F2172D00673151 /* APIHelper.swift in Sources */,
+				346F011C21F2172D00673151 /* Configuration.swift in Sources */,
+				346F011D21F2172D00673151 /* AlamofireImplementations.swift in Sources */,
+				346F012221F2172D00673151 /* Card.swift in Sources */,
+				346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */,
 				346F00D021F20F9500673151 /* AppDelegate.swift in Sources */,
+				346F011E21F2172D00673151 /* JSONEncodingHelper.swift in Sources */,
+				346F011F21F2172D00673151 /* Extensions.swift in Sources */,
+				346F011921F2172D00673151 /* CardAPI.swift in Sources */,
 				346F00D821F20F9500673151 /* Escarmoosh.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,9 +662,12 @@
 		};
 		346F00F821F20F9800673151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA9AC73A2EA427C70DF4B57 /* Pods-Escarmoosh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DA7865XRM2;
 				INFOPLIST_FILE = Escarmoosh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.Escarmoosh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,9 +683,12 @@
 		};
 		346F00F921F20F9800673151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DC773D175C90F0C88506D8 /* Pods-Escarmoosh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DA7865XRM2;
 				INFOPLIST_FILE = Escarmoosh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +696,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = escarmoosh.Escarmoosh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +704,7 @@
 		};
 		346F00FB21F20F9800673151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0A5B38BA3A9D905605B5BC /* Pods-EscarmooshTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +725,7 @@
 		};
 		346F00FC21F20F9800673151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 129DEF5AA2CF247A8AC33C2A /* Pods-EscarmooshTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +746,7 @@
 		};
 		346F00FE21F20F9800673151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEE24EE4C33F1F27D5A6190 /* Pods-EscarmooshUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +766,7 @@
 		};
 		346F00FF21F20F9800673151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33397CADA9DEC1094ACAA525 /* Pods-EscarmooshUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
