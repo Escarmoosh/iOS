@@ -13,7 +13,7 @@ class CardFakker: CardStoreProtocol {
     func fetchCard(with id: String, completionHandler: @escaping ((Card?, Error?) -> Void))
     {
         do {
-            let card = try self.createFakeCard(_id: id, firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "20-12-1984", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse")
+            let card = try self.createFakeCard(_id: id, firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "1984-12-20", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse")
             completionHandler(card, nil)
         } catch let error as CardStoreError {
             
@@ -29,11 +29,11 @@ class CardFakker: CardStoreProtocol {
         var card: [Card] = Array()
         
         do {
-            try card.append(self.createFakeCard(_id: "0", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "20-12-1984", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
-            try card.append(self.createFakeCard(_id: "1", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "20-12-1984", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
-            try card.append(self.createFakeCard(_id: "2", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "20-12-1984", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
-            try card.append(self.createFakeCard(_id: "3", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "20-12-1984", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
-            try card.append(self.createFakeCard(_id: "4", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "20-12-1984", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
+            try card.append(self.createFakeCard(_id: "0", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "1984-12-20", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
+            try card.append(self.createFakeCard(_id: "1", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "1984-12-20", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
+            try card.append(self.createFakeCard(_id: "2", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "1984-12-20", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
+            try card.append(self.createFakeCard(_id: "3", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "1984-12-20", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
+            try card.append(self.createFakeCard(_id: "4", firstName: "Arnaud", lastName: "Verrier", club: "Bondy", birthday: "1984-12-20", category: "Senior", hand: "Droite", weapon: "Epee", grip: "Crosse"))
             
             completionHandler(card, nil)
         } catch let error as CardStoreError {
