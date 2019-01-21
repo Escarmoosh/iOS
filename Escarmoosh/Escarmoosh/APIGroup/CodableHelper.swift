@@ -22,12 +22,12 @@ open class CodableHelper {
             decoder.dateDecodingStrategy = .formatted(df)
         } else {
             decoder.dataDecodingStrategy = .base64
-            let formatter = DateFormatter()
+            /*let formatter = DateFormatter()
             formatter.calendar = Calendar(identifier: .iso8601)
             formatter.locale = Locale(identifier: "en_US_POSIX")
             formatter.timeZone = TimeZone(secondsFromGMT: 0)
-            formatter.dateFormat = "yyyy-MM-dd"
-            decoder.dateDecodingStrategy = .formatted(formatter)
+            formatter.dateFormat = Configuration.dateFormat*/
+            decoder.dateDecodingStrategy = .formatted(Configuration.dateFormatter)
         }
 
         do {

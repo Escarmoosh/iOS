@@ -12,4 +12,14 @@ open class Configuration {
 	// You must set it prior to encoding any dates, and it will only be read once. 
     public static var dateFormat = "yyyy-MM-dd"
     
+    public static var dateFormatter: DateFormatter {
+        
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = Configuration.dateFormat
+        
+        return formatter;
+    }
 }

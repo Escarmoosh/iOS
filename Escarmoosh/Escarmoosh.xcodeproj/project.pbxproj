@@ -29,6 +29,9 @@
 		346F012521F2172D00673151 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011321F2172D00673151 /* Skill.swift */; };
 		346F012721F2172D00673151 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011521F2172D00673151 /* APIHelper.swift */; };
 		346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011621F2172D00673151 /* JSONEncodableEncoding.swift */; };
+		34B071A421F6067200F98C52 /* CardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071A321F6067200F98C52 /* CardWorker.swift */; };
+		34B071A621F60A5E00F98C52 /* CardSwagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071A521F60A5E00F98C52 /* CardSwagger.swift */; };
+		34B071A921F6166000F98C52 /* CardFakker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071A821F6166000F98C52 /* CardFakker.swift */; };
 		754DD0757D2DCB4EF39854B4 /* Pods_Escarmoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC0E20604DE19FA4C240745 /* Pods_Escarmoosh.framework */; };
 		97DE9278FA7956FCFD043DA3 /* Pods_EscarmooshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E67EF77E3F44DD1A43873C2 /* Pods_EscarmooshUITests.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +84,9 @@
 		346F011321F2172D00673151 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		346F011521F2172D00673151 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		346F011621F2172D00673151 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		34B071A321F6067200F98C52 /* CardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorker.swift; sourceTree = "<group>"; };
+		34B071A521F60A5E00F98C52 /* CardSwagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwagger.swift; sourceTree = "<group>"; };
+		34B071A821F6166000F98C52 /* CardFakker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFakker.swift; sourceTree = "<group>"; };
 		74DC773D175C90F0C88506D8 /* Pods-Escarmoosh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escarmoosh.release.xcconfig"; path = "Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh.release.xcconfig"; sourceTree = "<group>"; };
 		7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscarmooshTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0A5B38BA3A9D905605B5BC /* Pods-EscarmooshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshTests.debug.xcconfig"; path = "Target Support Files/Pods-EscarmooshTests/Pods-EscarmooshTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				346F010121F2126400673151 /* CommonCard */,
+				34B071AA21F6267A00F98C52 /* DisplayCard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -184,6 +191,9 @@
 		346F010121F2126400673151 /* CommonCard */ = {
 			isa = PBXGroup;
 			children = (
+				34B071A321F6067200F98C52 /* CardWorker.swift */,
+				34B071A521F60A5E00F98C52 /* CardSwagger.swift */,
+				34B071A821F6166000F98C52 /* CardFakker.swift */,
 			);
 			path = CommonCard;
 			sourceTree = "<group>";
@@ -222,6 +232,13 @@
 				346F011321F2172D00673151 /* Skill.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		34B071AA21F6267A00F98C52 /* DisplayCard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DisplayCard;
 			sourceTree = "<group>";
 		};
 		6AA2A2E4804A70A433A943E4 /* Pods */ = {
@@ -475,7 +492,10 @@
 			files = (
 				346F012121F2172D00673151 /* Competence.swift in Sources */,
 				346F00D221F20F9500673151 /* ViewController.swift in Sources */,
+				34B071A921F6166000F98C52 /* CardFakker.swift in Sources */,
+				34B071A421F6067200F98C52 /* CardWorker.swift in Sources */,
 				346F012521F2172D00673151 /* Skill.swift in Sources */,
+				34B071A621F60A5E00F98C52 /* CardSwagger.swift in Sources */,
 				346F012021F2172D00673151 /* Models.swift in Sources */,
 				346F011A21F2172D00673151 /* CodableHelper.swift in Sources */,
 				346F011B21F2172D00673151 /* APIs.swift in Sources */,

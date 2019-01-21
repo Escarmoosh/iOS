@@ -14,18 +14,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        CardAPI.cardGet(cardId: "0") { (card:Card?, error:Error?) in
+        do {
             
-            if let error = error {
+            try CardAPI.cardGet(cardId: "0") { (card:Card?, error:Error?) in
                 
-                NSLog("Error from swagger : %@", error.localizedDescription);
+                if let error = error {
+                    
+                    NSLog("Error from swagger : %@", error.localizedDescription);
+                }
+                
+                if let card = card {
+                    
+                    NSLog("Answer from swagger : %@", card.firstName)
+                }
             }
+        } catch {
             
-            if let card = card {
-                
-                NSLog("Answer from swagger : %@", card.firstName)
-            }
         }
+        
     }
 
 
