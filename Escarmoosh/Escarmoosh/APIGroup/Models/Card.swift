@@ -27,9 +27,11 @@ public struct Card: Codable {
     public var weapon: String
 
     public var grip: String
+    
+    public var score: Double
 
     public var card: [Competence]?
-    public init(_id: String, firstName: String, lastName: String, club: String, birthday: Date, category: String, hand: String, weapon: String, grip: String, card: [Competence]?) { 
+    public init(_id: String, firstName: String, lastName: String, club: String, birthday: Date, category: String, hand: String, weapon: String, grip: String, score: Double, card: [Competence]?) {
         self._id = _id
         self.firstName = firstName
         self.lastName = lastName
@@ -40,6 +42,7 @@ public struct Card: Codable {
         self.weapon = weapon
         self.grip = grip
         self.card = card
+        self.score = score
     }
     public enum CodingKeys: String, CodingKey { 
         case _id = "id"
@@ -52,6 +55,7 @@ public struct Card: Codable {
         case weapon
         case grip
         case card
+        case score
     }
 
 }

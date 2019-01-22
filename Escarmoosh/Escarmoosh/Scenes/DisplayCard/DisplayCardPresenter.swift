@@ -14,7 +14,7 @@ import UIKit
 
 protocol DisplayCardPresentationLogic
 {
-    func presentSomething(response: DisplayCard.Information.Response)
+    func presentInformation(response: DisplayCard.Information.Response)
 }
 
 class DisplayCardPresenter: DisplayCardPresentationLogic
@@ -23,9 +23,14 @@ class DisplayCardPresenter: DisplayCardPresentationLogic
     
     // MARK: Do something
     
-    func presentSomething(response: DisplayCard.Information.Response)
+    func presentInformation(response: DisplayCard.Information.Response)
     {
-        let viewModel = DisplayCard.Information.ViewModel(completeName: response.card.firstName)
+        let completeName = response.card.firstName + " " + response.card.lastName
+        let completeLocation = response.card.club
+        let completeCategory = response.card.weapon + " - " + response.card.category
+        let completeWeapon = response.card.hand + " - " + response.card.grip
+        
+        let viewModel = DisplayCard.Information.ViewModel(completeName: completeName, completeLocation: completeLocation, completeCategory: completeCategory, completeWeapon: completeWeapon, score: response.card.score)
         viewController?.displaySomething(viewModel: viewModel)
     }
 }

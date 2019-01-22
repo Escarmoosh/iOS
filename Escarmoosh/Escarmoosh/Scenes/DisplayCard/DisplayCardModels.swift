@@ -32,6 +32,11 @@ enum DisplayCard
         struct ViewModel
         {
             var completeName: String
+            var completeLocation: String
+            var completeCategory: String
+            var completeWeapon: String
+            
+            var score: Double
         }
     }
 }

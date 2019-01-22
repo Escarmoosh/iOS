@@ -39,7 +39,7 @@ class DisplayCardInteractor: DisplayCardBusinessLogic, DisplayCardDataStore
             if let card = card {
                 
                 let response = DisplayCard.Information.Response(card:card)
-                self.presenter?.presentSomething(response: response)
+                self.presenter?.presentInformation(response: response)
             }
         })
     }

@@ -29,6 +29,11 @@
 		346F012521F2172D00673151 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011321F2172D00673151 /* Skill.swift */; };
 		346F012721F2172D00673151 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011521F2172D00673151 /* APIHelper.swift */; };
 		346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011621F2172D00673151 /* JSONEncodableEncoding.swift */; };
+		34875E1221F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34875E1121F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift */; };
+		34A72AE721F74C6D002151B9 /* FakeCompetenceScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A72AE621F74C6D002151B9 /* FakeCompetenceScoreView.swift */; };
+		34A72AE921F74C77002151B9 /* FakeCompetenceScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A72AE821F74C77002151B9 /* FakeCompetenceScoreView.xib */; };
+		34A72AF021F767EF002151B9 /* MASKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A72AEF21F767EF002151B9 /* MASKView.swift */; };
+		34A72AF321F769DE002151B9 /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A72AF221F769DE002151B9 /* NSLayoutConstraintExtension.swift */; };
 		34B071A421F6067200F98C52 /* CardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071A321F6067200F98C52 /* CardWorker.swift */; };
 		34B071A621F60A5E00F98C52 /* CardSwagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071A521F60A5E00F98C52 /* CardSwagger.swift */; };
 		34B071A921F6166000F98C52 /* CardFakker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071A821F6166000F98C52 /* CardFakker.swift */; };
@@ -94,6 +99,11 @@
 		346F011321F2172D00673151 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		346F011521F2172D00673151 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		346F011621F2172D00673151 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		34875E1121F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneriqueCompetenceScoreView.swift; sourceTree = "<group>"; };
+		34A72AE621F74C6D002151B9 /* FakeCompetenceScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCompetenceScoreView.swift; sourceTree = "<group>"; };
+		34A72AE821F74C77002151B9 /* FakeCompetenceScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeCompetenceScoreView.xib; sourceTree = "<group>"; };
+		34A72AEF21F767EF002151B9 /* MASKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MASKView.swift; sourceTree = "<group>"; };
+		34A72AF221F769DE002151B9 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
 		34B071A321F6067200F98C52 /* CardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorker.swift; sourceTree = "<group>"; };
 		34B071A521F60A5E00F98C52 /* CardSwagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwagger.swift; sourceTree = "<group>"; };
 		34B071A821F6166000F98C52 /* CardFakker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFakker.swift; sourceTree = "<group>"; };
@@ -255,6 +265,34 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		34875E0F21F72B2E000DC512 /* CardInformation */ = {
+			isa = PBXGroup;
+			children = (
+				34B071C221F6361F00F98C52 /* GeneriqueCardInformationView.swift */,
+				34B071BE21F632F200F98C52 /* FakeCardInformationView.xib */,
+				34B071C021F6330900F98C52 /* FakeCardInformationView.swift */,
+			);
+			path = CardInformation;
+			sourceTree = "<group>";
+		};
+		34875E1021F72B41000DC512 /* CompetenceScore */ = {
+			isa = PBXGroup;
+			children = (
+				34875E1121F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift */,
+				34A72AE821F74C77002151B9 /* FakeCompetenceScoreView.xib */,
+				34A72AE621F74C6D002151B9 /* FakeCompetenceScoreView.swift */,
+			);
+			path = CompetenceScore;
+			sourceTree = "<group>";
+		};
+		34A72AF121F7698C002151B9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34A72AF221F769DE002151B9 /* NSLayoutConstraintExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		34B071AA21F6267A00F98C52 /* DisplayCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +310,7 @@
 		34B071B721F6313900F98C52 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				34A72AF121F7698C002151B9 /* Extension */,
 				34B071B821F6316B00F98C52 /* Generique */,
 			);
 			path = Tools;
@@ -281,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				34B071BB21F6319B00F98C52 /* NIBView.swift */,
+				34A72AEF21F767EF002151B9 /* MASKView.swift */,
 			);
 			path = Generique;
 			sourceTree = "<group>";
@@ -288,9 +328,8 @@
 		34B071BD21F6327A00F98C52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				34B071BE21F632F200F98C52 /* FakeCardInformationView.xib */,
-				34B071C021F6330900F98C52 /* FakeCardInformationView.swift */,
-				34B071C221F6361F00F98C52 /* GeneriqueCardInformationView.swift */,
+				34875E1021F72B41000DC512 /* CompetenceScore */,
+				34875E0F21F72B2E000DC512 /* CardInformation */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,6 +469,7 @@
 				346F00DA21F20F9700673151 /* Assets.xcassets in Resources */,
 				34B071BF21F632F200F98C52 /* FakeCardInformationView.xib in Resources */,
 				346F00D521F20F9500673151 /* Main.storyboard in Resources */,
+				34A72AE921F74C77002151B9 /* FakeCompetenceScoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,15 +589,19 @@
 				34B071B521F626E700F98C52 /* DisplayCardViewController.swift in Sources */,
 				346F00D221F20F9500673151 /* ViewController.swift in Sources */,
 				34B071A921F6166000F98C52 /* CardFakker.swift in Sources */,
+				34A72AF321F769DE002151B9 /* NSLayoutConstraintExtension.swift in Sources */,
 				34B071A421F6067200F98C52 /* CardWorker.swift in Sources */,
 				346F012521F2172D00673151 /* Skill.swift in Sources */,
 				34B071B621F626E700F98C52 /* DisplayCardInteractor.swift in Sources */,
 				34B071B121F626E700F98C52 /* DisplayCardPresenter.swift in Sources */,
+				34875E1221F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift in Sources */,
+				34A72AE721F74C6D002151B9 /* FakeCompetenceScoreView.swift in Sources */,
 				34B071B221F626E700F98C52 /* DisplayCardWorker.swift in Sources */,
 				34B071A621F60A5E00F98C52 /* CardSwagger.swift in Sources */,
 				346F012021F2172D00673151 /* Models.swift in Sources */,
 				346F011A21F2172D00673151 /* CodableHelper.swift in Sources */,
 				346F011B21F2172D00673151 /* APIs.swift in Sources */,
+				34A72AF021F767EF002151B9 /* MASKView.swift in Sources */,
 				34B071C321F6361F00F98C52 /* GeneriqueCardInformationView.swift in Sources */,
 				346F012721F2172D00673151 /* APIHelper.swift in Sources */,
 				34B071BC21F6319B00F98C52 /* NIBView.swift in Sources */,
