@@ -19,4 +19,9 @@ class FakeCompetenceScoreView: GeneriqueCompetenceScoreView {
         
         cstrWidthForScore.setMultiplier(multiplier: CGFloat(viewModel.score/5.0))
     }
+    
+    override func display(viewModel: DisplayCard.Competence.ViewModel) {
+        
+        cstrWidthForScore.setMultiplier(multiplier: CGFloat(viewModel.score/5.0))
+    }
 }

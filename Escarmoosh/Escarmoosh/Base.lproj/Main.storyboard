@@ -1,45 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B3K-ss-8Wf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Display Card View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Root View Controller-->
+        <scene sceneID="S6c-4B-pQa">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DisplayCardViewController" customModule="Escarmoosh" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="XJQ-QS-mVz" customClass="DisplayCardViewController" customModule="Escarmoosh" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uZ6-dN-pnn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cj-qh-vbU" customClass="FakeCardInformationView" customModule="Escarmoosh" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="128" id="a64-jX-AUj"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3cj-qh-vbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RN9-aZ-2Fy"/>
-                            <constraint firstItem="3cj-qh-vbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sdv-ZT-HCi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3cj-qh-vbU" secondAttribute="trailing" id="wps-0M-2U7"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="eSa-6F-Ra3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nq2-FG-OTr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nq2-FG-OTr" id="ezY-sv-FYy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53f-8k-Q7P" customClass="FakeCardInformationView" customModule="Escarmoosh" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="53f-8k-Q7P" secondAttribute="bottom" id="20n-87-cbq"/>
+                                                <constraint firstItem="53f-8k-Q7P" firstAttribute="top" secondItem="ezY-sv-FYy" secondAttribute="top" id="BfF-9B-Jkk"/>
+                                                <constraint firstItem="53f-8k-Q7P" firstAttribute="leading" secondItem="ezY-sv-FYy" secondAttribute="leading" id="jN8-h5-gOr"/>
+                                                <constraint firstAttribute="trailing" secondItem="53f-8k-Q7P" secondAttribute="trailing" id="sSa-NI-awN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="owS-aQ-o9S">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="BX0-qc-8zp">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BX0-qc-8zp" id="77l-NZ-DgD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-Qb-APN" customClass="FakeCompetenceInformationView" customModule="Escarmoosh" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GwY-Qb-APN" firstAttribute="top" secondItem="77l-NZ-DgD" secondAttribute="top" id="G7y-FD-glV"/>
+                                                <constraint firstAttribute="trailing" secondItem="GwY-Qb-APN" secondAttribute="trailing" id="KPe-BQ-hhB"/>
+                                                <constraint firstItem="GwY-Qb-APN" firstAttribute="leading" secondItem="77l-NZ-DgD" secondAttribute="leading" id="MIA-9V-JyF"/>
+                                                <constraint firstAttribute="bottom" secondItem="GwY-Qb-APN" secondAttribute="bottom" id="ffO-Lm-ChQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8ti-Z1-JUU">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8ti-Z1-JUU" id="RJE-yH-6Lv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e38-aQ-E8N" customClass="FakeCompetenceInformationView" customModule="Escarmoosh" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e38-aQ-E8N" firstAttribute="leading" secondItem="RJE-yH-6Lv" secondAttribute="leading" id="TZ4-Hz-YGs"/>
+                                                <constraint firstItem="e38-aQ-E8N" firstAttribute="top" secondItem="RJE-yH-6Lv" secondAttribute="top" id="pYV-Nn-i2c"/>
+                                                <constraint firstAttribute="bottom" secondItem="e38-aQ-E8N" secondAttribute="bottom" id="rfF-bg-k3Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="e38-aQ-E8N" secondAttribute="trailing" id="ylH-dF-qPB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gtB-xt-7Fx">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gtB-xt-7Fx" id="AB9-Kf-5e2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6Y-Tm-sDZ" customClass="FakeCompetenceInformationView" customModule="Escarmoosh" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g6Y-Tm-sDZ" firstAttribute="top" secondItem="AB9-Kf-5e2" secondAttribute="top" id="0IQ-L4-REf"/>
+                                                <constraint firstItem="g6Y-Tm-sDZ" firstAttribute="leading" secondItem="AB9-Kf-5e2" secondAttribute="leading" id="6UX-kF-asi"/>
+                                                <constraint firstAttribute="trailing" secondItem="g6Y-Tm-sDZ" secondAttribute="trailing" id="qPq-6U-2BV"/>
+                                                <constraint firstAttribute="bottom" secondItem="g6Y-Tm-sDZ" secondAttribute="bottom" id="tKk-Wg-mqn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jor-yX-3l5">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jor-yX-3l5" id="Hwt-SM-6BE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4K-Ny-kSK" customClass="FakeCompetenceInformationView" customModule="Escarmoosh" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="u4K-Ny-kSK" secondAttribute="trailing" id="014-rz-3X8"/>
+                                                <constraint firstItem="u4K-Ny-kSK" firstAttribute="top" secondItem="Hwt-SM-6BE" secondAttribute="top" id="Gck-Jf-4Id"/>
+                                                <constraint firstItem="u4K-Ny-kSK" firstAttribute="leading" secondItem="Hwt-SM-6BE" secondAttribute="leading" id="M08-EU-umc"/>
+                                                <constraint firstAttribute="bottom" secondItem="u4K-Ny-kSK" secondAttribute="bottom" id="uXk-lQ-Gw7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="XJQ-QS-mVz" id="QLw-lP-AW7"/>
+                            <outlet property="delegate" destination="XJQ-QS-mVz" id="ChN-Wh-jgp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="gWp-OR-aAc"/>
                     <connections>
-                        <outlet property="cardInformation" destination="3cj-qh-vbU" id="LUh-eX-Kmd"/>
+                        <outlet property="cardInformation" destination="53f-8k-Q7P" id="NFv-Kz-o6Q"/>
+                        <outlet property="competence1Information" destination="GwY-Qb-APN" id="PEW-fP-48h"/>
+                        <outlet property="competence2Information" destination="e38-aQ-E8N" id="OQY-5T-ZFw"/>
+                        <outlet property="competence3Information" destination="g6Y-Tm-sDZ" id="n5r-Jw-hcz"/>
+                        <outlet property="competence4Information" destination="u4K-Ny-kSK" id="RYI-2E-7UQ"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eY-um-UF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="161" y="-338"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="35R-Sc-cMl">
+            <objects>
+                <navigationController id="B3K-ss-8Wf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cha-2m-saC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XJQ-QS-mVz" kind="relationship" relationship="rootViewController" id="tLx-jk-6jd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zct-q8-JwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-788" y="-338"/>
         </scene>
     </scenes>
 </document>

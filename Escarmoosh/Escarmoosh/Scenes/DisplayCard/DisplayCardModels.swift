@@ -16,18 +16,38 @@ enum DisplayCard
 {
     // MARK: Use cases
     
+    enum Skill
+    {
+        struct ViewModel
+        {
+            var label: String
+            var win: Int
+            var total: Int
+            var scoreLabel: String
+        }
+    }
+    
+    enum Competence
+    {
+        struct ViewModel
+        {
+            
+            var label: String
+            var score: Double
+            
+            var skills: [DisplayCard.Skill.ViewModel]
+        }
+    }
+    
     enum Information
     {
-        /*struct FormattedCard
-        {
-        }*/
         struct Request
         {
             var id: String
         }
         struct Response
         {
-            var card:Card
+            var card:CardModel
         }
         struct ViewModel
         {
@@ -37,6 +57,8 @@ enum DisplayCard
             var completeWeapon: String
             
             var score: Double
+            
+            var competences: [DisplayCard.Competence.ViewModel]
         }
     }
 }

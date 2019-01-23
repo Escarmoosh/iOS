@@ -24,9 +24,9 @@
 		346F011E21F2172D00673151 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010B21F2172D00673151 /* JSONEncodingHelper.swift */; };
 		346F011F21F2172D00673151 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010C21F2172D00673151 /* Extensions.swift */; };
 		346F012021F2172D00673151 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010D21F2172D00673151 /* Models.swift */; };
-		346F012121F2172D00673151 /* Competence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010F21F2172D00673151 /* Competence.swift */; };
-		346F012221F2172D00673151 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011021F2172D00673151 /* Card.swift */; };
-		346F012521F2172D00673151 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011321F2172D00673151 /* Skill.swift */; };
+		346F012121F2172D00673151 /* CompetenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F010F21F2172D00673151 /* CompetenceModel.swift */; };
+		346F012221F2172D00673151 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011021F2172D00673151 /* CardModel.swift */; };
+		346F012521F2172D00673151 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011321F2172D00673151 /* SkillModel.swift */; };
 		346F012721F2172D00673151 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011521F2172D00673151 /* APIHelper.swift */; };
 		346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F011621F2172D00673151 /* JSONEncodableEncoding.swift */; };
 		34875E1221F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34875E1121F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift */; };
@@ -47,6 +47,12 @@
 		34B071BF21F632F200F98C52 /* FakeCardInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B071BE21F632F200F98C52 /* FakeCardInformationView.xib */; };
 		34B071C121F6330900F98C52 /* FakeCardInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071C021F6330900F98C52 /* FakeCardInformationView.swift */; };
 		34B071C321F6361F00F98C52 /* GeneriqueCardInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B071C221F6361F00F98C52 /* GeneriqueCardInformationView.swift */; };
+		34F271A621F8BAED00574830 /* GeneriqueCompetenceInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F271A521F8BAED00574830 /* GeneriqueCompetenceInformationView.swift */; };
+		34F271A821F8BBA600574830 /* FakeCompetenceInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F271A721F8BBA600574830 /* FakeCompetenceInformationView.xib */; };
+		34F271AD21F8BD6C00574830 /* GeneriqueSkillScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F271AC21F8BD6C00574830 /* GeneriqueSkillScoreView.swift */; };
+		34F271AF21F8BD9700574830 /* FakeSkillScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F271AE21F8BD9700574830 /* FakeSkillScoreView.xib */; };
+		34F271B121F8BDA500574830 /* FakeSkillScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F271B021F8BDA500574830 /* FakeSkillScoreView.swift */; };
+		34F271B321F8BDBB00574830 /* FakeCompetenceInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F271B221F8BDBB00574830 /* FakeCompetenceInformationView.swift */; };
 		754DD0757D2DCB4EF39854B4 /* Pods_Escarmoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC0E20604DE19FA4C240745 /* Pods_Escarmoosh.framework */; };
 		97DE9278FA7956FCFD043DA3 /* Pods_EscarmooshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E67EF77E3F44DD1A43873C2 /* Pods_EscarmooshUITests.framework */; };
 /* End PBXBuildFile section */
@@ -94,9 +100,9 @@
 		346F010B21F2172D00673151 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
 		346F010C21F2172D00673151 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		346F010D21F2172D00673151 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		346F010F21F2172D00673151 /* Competence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competence.swift; sourceTree = "<group>"; };
-		346F011021F2172D00673151 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		346F011321F2172D00673151 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		346F010F21F2172D00673151 /* CompetenceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetenceModel.swift; sourceTree = "<group>"; };
+		346F011021F2172D00673151 /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		346F011321F2172D00673151 /* SkillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		346F011521F2172D00673151 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		346F011621F2172D00673151 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
 		34875E1121F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneriqueCompetenceScoreView.swift; sourceTree = "<group>"; };
@@ -117,6 +123,12 @@
 		34B071BE21F632F200F98C52 /* FakeCardInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeCardInformationView.xib; sourceTree = "<group>"; };
 		34B071C021F6330900F98C52 /* FakeCardInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCardInformationView.swift; sourceTree = "<group>"; };
 		34B071C221F6361F00F98C52 /* GeneriqueCardInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneriqueCardInformationView.swift; sourceTree = "<group>"; };
+		34F271A521F8BAED00574830 /* GeneriqueCompetenceInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneriqueCompetenceInformationView.swift; sourceTree = "<group>"; };
+		34F271A721F8BBA600574830 /* FakeCompetenceInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeCompetenceInformationView.xib; sourceTree = "<group>"; };
+		34F271AC21F8BD6C00574830 /* GeneriqueSkillScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneriqueSkillScoreView.swift; sourceTree = "<group>"; };
+		34F271AE21F8BD9700574830 /* FakeSkillScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeSkillScoreView.xib; sourceTree = "<group>"; };
+		34F271B021F8BDA500574830 /* FakeSkillScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSkillScoreView.swift; sourceTree = "<group>"; };
+		34F271B221F8BDBB00574830 /* FakeCompetenceInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCompetenceInformationView.swift; sourceTree = "<group>"; };
 		74DC773D175C90F0C88506D8 /* Pods-Escarmoosh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escarmoosh.release.xcconfig"; path = "Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh.release.xcconfig"; sourceTree = "<group>"; };
 		7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscarmooshTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0A5B38BA3A9D905605B5BC /* Pods-EscarmooshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshTests.debug.xcconfig"; path = "Target Support Files/Pods-EscarmooshTests/Pods-EscarmooshTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,9 +270,9 @@
 		346F010E21F2172D00673151 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				346F010F21F2172D00673151 /* Competence.swift */,
-				346F011021F2172D00673151 /* Card.swift */,
-				346F011321F2172D00673151 /* Skill.swift */,
+				346F010F21F2172D00673151 /* CompetenceModel.swift */,
+				346F011021F2172D00673151 /* CardModel.swift */,
+				346F011321F2172D00673151 /* SkillModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,10 +340,32 @@
 		34B071BD21F6327A00F98C52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34F271AB21F8BD3600574830 /* SkillScore */,
+				34F271A421F89D9800574830 /* CompetenceInformation */,
 				34875E1021F72B41000DC512 /* CompetenceScore */,
 				34875E0F21F72B2E000DC512 /* CardInformation */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		34F271A421F89D9800574830 /* CompetenceInformation */ = {
+			isa = PBXGroup;
+			children = (
+				34F271A521F8BAED00574830 /* GeneriqueCompetenceInformationView.swift */,
+				34F271A721F8BBA600574830 /* FakeCompetenceInformationView.xib */,
+				34F271B221F8BDBB00574830 /* FakeCompetenceInformationView.swift */,
+			);
+			path = CompetenceInformation;
+			sourceTree = "<group>";
+		};
+		34F271AB21F8BD3600574830 /* SkillScore */ = {
+			isa = PBXGroup;
+			children = (
+				34F271AC21F8BD6C00574830 /* GeneriqueSkillScoreView.swift */,
+				34F271AE21F8BD9700574830 /* FakeSkillScoreView.xib */,
+				34F271B021F8BDA500574830 /* FakeSkillScoreView.swift */,
+			);
+			path = SkillScore;
 			sourceTree = "<group>";
 		};
 		6AA2A2E4804A70A433A943E4 /* Pods */ = {
@@ -468,8 +502,10 @@
 				346F00DD21F20F9700673151 /* LaunchScreen.storyboard in Resources */,
 				346F00DA21F20F9700673151 /* Assets.xcassets in Resources */,
 				34B071BF21F632F200F98C52 /* FakeCardInformationView.xib in Resources */,
+				34F271AF21F8BD9700574830 /* FakeSkillScoreView.xib in Resources */,
 				346F00D521F20F9500673151 /* Main.storyboard in Resources */,
 				34A72AE921F74C77002151B9 /* FakeCompetenceScoreView.xib in Resources */,
+				34F271A821F8BBA600574830 /* FakeCompetenceInformationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,18 +621,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346F012121F2172D00673151 /* Competence.swift in Sources */,
+				346F012121F2172D00673151 /* CompetenceModel.swift in Sources */,
 				34B071B521F626E700F98C52 /* DisplayCardViewController.swift in Sources */,
 				346F00D221F20F9500673151 /* ViewController.swift in Sources */,
 				34B071A921F6166000F98C52 /* CardFakker.swift in Sources */,
 				34A72AF321F769DE002151B9 /* NSLayoutConstraintExtension.swift in Sources */,
+				34F271A621F8BAED00574830 /* GeneriqueCompetenceInformationView.swift in Sources */,
 				34B071A421F6067200F98C52 /* CardWorker.swift in Sources */,
-				346F012521F2172D00673151 /* Skill.swift in Sources */,
+				346F012521F2172D00673151 /* SkillModel.swift in Sources */,
 				34B071B621F626E700F98C52 /* DisplayCardInteractor.swift in Sources */,
 				34B071B121F626E700F98C52 /* DisplayCardPresenter.swift in Sources */,
 				34875E1221F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift in Sources */,
 				34A72AE721F74C6D002151B9 /* FakeCompetenceScoreView.swift in Sources */,
 				34B071B221F626E700F98C52 /* DisplayCardWorker.swift in Sources */,
+				34F271B121F8BDA500574830 /* FakeSkillScoreView.swift in Sources */,
 				34B071A621F60A5E00F98C52 /* CardSwagger.swift in Sources */,
 				346F012021F2172D00673151 /* Models.swift in Sources */,
 				346F011A21F2172D00673151 /* CodableHelper.swift in Sources */,
@@ -604,17 +642,19 @@
 				34A72AF021F767EF002151B9 /* MASKView.swift in Sources */,
 				34B071C321F6361F00F98C52 /* GeneriqueCardInformationView.swift in Sources */,
 				346F012721F2172D00673151 /* APIHelper.swift in Sources */,
+				34F271B321F8BDBB00574830 /* FakeCompetenceInformationView.swift in Sources */,
 				34B071BC21F6319B00F98C52 /* NIBView.swift in Sources */,
 				346F011C21F2172D00673151 /* Configuration.swift in Sources */,
 				34B071B321F626E700F98C52 /* DisplayCardRouter.swift in Sources */,
 				346F011D21F2172D00673151 /* AlamofireImplementations.swift in Sources */,
 				34B071C121F6330900F98C52 /* FakeCardInformationView.swift in Sources */,
-				346F012221F2172D00673151 /* Card.swift in Sources */,
+				346F012221F2172D00673151 /* CardModel.swift in Sources */,
 				346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */,
 				346F00D021F20F9500673151 /* AppDelegate.swift in Sources */,
 				34B071B421F626E700F98C52 /* DisplayCardModels.swift in Sources */,
 				346F011E21F2172D00673151 /* JSONEncodingHelper.swift in Sources */,
 				346F011F21F2172D00673151 /* Extensions.swift in Sources */,
+				34F271AD21F8BD6C00574830 /* GeneriqueSkillScoreView.swift in Sources */,
 				346F011921F2172D00673151 /* CardAPI.swift in Sources */,
 				346F00D821F20F9500673151 /* Escarmoosh.xcdatamodeld in Sources */,
 			);

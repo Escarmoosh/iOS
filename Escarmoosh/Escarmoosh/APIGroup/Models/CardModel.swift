@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Card: Codable {
+public struct CardModel: Codable {
 
 
     public var _id: String
@@ -30,8 +30,9 @@ public struct Card: Codable {
     
     public var score: Double
 
-    public var card: [Competence]?
-    public init(_id: String, firstName: String, lastName: String, club: String, birthday: Date, category: String, hand: String, weapon: String, grip: String, score: Double, card: [Competence]?) {
+    public var competences: [CompetenceModel]
+    
+    public init(_id: String, firstName: String, lastName: String, club: String, birthday: Date, category: String, hand: String, weapon: String, grip: String, score: Double, competences: [CompetenceModel]) {
         self._id = _id
         self.firstName = firstName
         self.lastName = lastName
@@ -41,7 +42,7 @@ public struct Card: Codable {
         self.hand = hand
         self.weapon = weapon
         self.grip = grip
-        self.card = card
+        self.competences = competences
         self.score = score
     }
     public enum CodingKeys: String, CodingKey { 
@@ -54,7 +55,7 @@ public struct Card: Codable {
         case hand
         case weapon
         case grip
-        case card
+        case competences
         case score
     }
 

@@ -10,12 +10,12 @@ import Foundation
 
 class CardSwagger: CardStoreProtocol {
     
-    func fetchCard(with id: String, completionHandler: @escaping ((Card?, Error?) -> Void)) {
+    func fetchCard(with id: String, completionHandler: @escaping ((CardModel?, Error?) -> Void)) {
         
         CardAPI.cardGet(cardId: id, completion: completionHandler)
     }
     
-    func fetchCards(completionHandler: @escaping (([Card]?, Error?) -> Void)) {
+    func fetchCards(completionHandler: @escaping (([CardModel]?, Error?) -> Void)) {
         
         
     }

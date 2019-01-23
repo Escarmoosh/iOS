@@ -13,4 +13,8 @@ class GeneriqueCompetenceScoreView: NIBView {
     func display(viewModel: DisplayCard.Information.ViewModel) {
         
     }
+    
+    func display(viewModel: DisplayCard.Competence.ViewModel) {
+        
+    }
 }

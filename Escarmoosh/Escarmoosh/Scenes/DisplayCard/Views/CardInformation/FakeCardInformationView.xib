@@ -99,6 +99,7 @@
                         <constraint firstItem="XEX-eX-CcY" firstAttribute="leading" secondItem="99q-c0-ryG" secondAttribute="leading" id="9NZ-BM-UoA"/>
                         <constraint firstAttribute="trailing" secondItem="XEX-eX-CcY" secondAttribute="trailing" id="9t4-2W-244"/>
                         <constraint firstItem="XEX-eX-CcY" firstAttribute="top" secondItem="99q-c0-ryG" secondAttribute="top" id="epr-1P-h95"/>
+                        <constraint firstAttribute="width" priority="250" constant="216" id="p1j-KB-JyD"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6y-j6-pAU">
@@ -132,7 +133,6 @@
                 <constraint firstItem="Ah0-eH-hbg" firstAttribute="top" secondItem="3rU-nE-4gd" secondAttribute="top" id="3a5-7Y-yI3"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="I6y-j6-pAU" secondAttribute="bottom" id="7yG-6c-zMb"/>
                 <constraint firstItem="I6y-j6-pAU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EQo-2x-5l7"/>
-                <constraint firstItem="99q-c0-ryG" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.7" id="LgO-pY-XBN"/>
                 <constraint firstItem="RER-SZ-dMt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="P4P-XF-Kvn"/>
                 <constraint firstItem="Ah0-eH-hbg" firstAttribute="bottom" secondItem="3rU-nE-4gd" secondAttribute="bottom" id="TAg-p7-WdP"/>
                 <constraint firstItem="99q-c0-ryG" firstAttribute="top" secondItem="3rU-nE-4gd" secondAttribute="bottom" constant="5" id="Z2h-km-gj7"/>

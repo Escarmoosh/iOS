@@ -14,15 +14,20 @@ import UIKit
 
 protocol DisplayCardDisplayLogic: class
 {
-    func displaySomething(viewModel: DisplayCard.Information.ViewModel)
+    func displayInformation(viewModel: DisplayCard.Information.ViewModel)
+    func displayCompetences(viewModel: DisplayCard.Information.ViewModel)
 }
 
-class DisplayCardViewController: UIViewController, DisplayCardDisplayLogic
+class DisplayCardViewController: UITableViewController, DisplayCardDisplayLogic
 {
     var interactor: DisplayCardBusinessLogic?
     var router: (NSObjectProtocol & DisplayCardRoutingLogic & DisplayCardDataPassing)?
     
     @IBOutlet var cardInformation: GeneriqueCardInformationView!
+    @IBOutlet weak var competence1Information: GeneriqueCompetenceInformationView!
+    @IBOutlet weak var competence2Information: FakeCompetenceInformationView!
+    @IBOutlet weak var competence3Information: FakeCompetenceInformationView!
+    @IBOutlet weak var competence4Information: FakeCompetenceInformationView!
     
     // MARK: Object lifecycle
     
@@ -72,22 +77,27 @@ class DisplayCardViewController: UIViewController, DisplayCardDisplayLogic
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        doSomething()
+        startWithAFirstCard()
     }
     
     // MARK: Do something
     
-    //@IBOutlet weak var nameTextField: UITextField!
-    
-    func doSomething()
+    func startWithAFirstCard()
     {
         let request = DisplayCard.Information.Request(id: "0")
-        interactor?.doSomething(request: request)
+        interactor?.fetchCard(request: request)
     }
     
-    func displaySomething(viewModel: DisplayCard.Information.ViewModel)
+    func displayInformation(viewModel: DisplayCard.Information.ViewModel)
     {
         cardInformation.display(viewModel: viewModel)
+    }
+    
+    func displayCompetences(viewModel: DisplayCard.Information.ViewModel) {
+        competence1Information.display(viewModel: viewModel.competences[0])
+        competence2Information.display(viewModel: viewModel.competences[1])
+        competence3Information.display(viewModel: viewModel.competences[2])
+        competence4Information.display(viewModel: viewModel.competences[3])
     }
 }
 

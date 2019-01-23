@@ -14,8 +14,8 @@ import UIKit
 
 protocol CardStoreProtocol {
     
-    func fetchCard(with id: String, completionHandler: @escaping ((_ card: Card?,_ error: Error?) -> Void))
-    func fetchCards(completionHandler:  @escaping ((_ cards: [Card]?,_ error: Error?) -> Void))
+    func fetchCard(with id: String, completionHandler: @escaping ((_ card: CardModel?,_ error: Error?) -> Void))
+    func fetchCards(completionHandler:  @escaping ((_ cards: [CardModel]?,_ error: Error?) -> Void))
 }
 
 enum CardStoreError: Error {
@@ -35,12 +35,12 @@ class CardWorker
         self.cardStore = cardStore
     }
     
-    func fetchCard(with id: String, completionHandler: @escaping ((_ card: Card?,_ error: Error?) -> Void))
+    func fetchCard(with id: String, completionHandler: @escaping ((_ card: CardModel?,_ error: Error?) -> Void))
     {
         self.cardStore.fetchCard(with: id, completionHandler: completionHandler)
     }
     
-    func fetchCards(completionHandler:  @escaping ((_ cards: [Card]?,_ error: Error?) -> Void))
+    func fetchCards(completionHandler:  @escaping ((_ cards: [CardModel]?,_ error: Error?) -> Void))
     {
         self.cardStore.fetchCards(completionHandler: completionHandler)
     }

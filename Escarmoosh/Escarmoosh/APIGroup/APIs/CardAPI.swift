@@ -14,7 +14,7 @@ open class CardAPI {     /**
      - parameter cardId: (path) the card unique identifier 
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func cardGet(cardId: String, completion: @escaping ((_ data: Card?,_ error: Error?) -> Void)) {
+    open class func cardGet(cardId: String, completion: @escaping ((_ data: CardModel?,_ error: Error?) -> Void)) {
         cardGetWithRequestBuilder(cardId: cardId).execute { (response, error) -> Void in
             completion(response?.body, error)
         }
@@ -28,7 +28,7 @@ open class CardAPI {     /**
 
      - returns: RequestBuilder<Card> 
      */
-    open class func cardGetWithRequestBuilder(cardId: String) -> RequestBuilder<Card> {
+    open class func cardGetWithRequestBuilder(cardId: String) -> RequestBuilder<CardModel> {
         var path = "/card/{cardId}"
         let cardIdPreEscape = "\(cardId)"
         let cardIdPostEscape = cardIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
@@ -38,7 +38,7 @@ open class CardAPI {     /**
 
         let url = URLComponents(string: URLString)
 
-        let requestBuilder: RequestBuilder<Card>.Type = SwaggerClientAPI.requestBuilderFactory.getBuilder()
+        let requestBuilder: RequestBuilder<CardModel>.Type = SwaggerClientAPI.requestBuilderFactory.getBuilder()
 
         return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }

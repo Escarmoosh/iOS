@@ -14,7 +14,7 @@ import UIKit
 
 protocol DisplayCardBusinessLogic
 {
-    func doSomething(request: DisplayCard.Information.Request)
+    func fetchCard(request: DisplayCard.Information.Request)
 }
 
 protocol DisplayCardDataStore
@@ -32,9 +32,9 @@ class DisplayCardInteractor: DisplayCardBusinessLogic, DisplayCardDataStore
     
     // MARK: Do something
     
-    func doSomething(request: DisplayCard.Information.Request)
+    func fetchCard(request: DisplayCard.Information.Request)
     {
-        cardWorker?.fetchCard(with: request.id, completionHandler: { (card:Card?, error:Error?) in
+        cardWorker?.fetchCard(with: request.id, completionHandler: { (card:CardModel?, error:Error?) in
             
             if let card = card {
                 
