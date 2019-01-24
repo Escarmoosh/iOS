@@ -8,7 +8,18 @@
 
 import UIKit
 
+@IBDesignable
 class FakeCardInformationView: GeneriqueCardInformationView {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupFromNib()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupFromNib()
+    }
     
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelLocation: UILabel!
@@ -17,10 +28,6 @@ class FakeCardInformationView: GeneriqueCardInformationView {
     @IBOutlet weak var labelWeapon: UILabel!
     
     @IBOutlet weak var viewForScore: GeneriqueCompetenceScoreView!
-    
-    override func getNibName() -> String? {
-        return "FakeCardInformationView"
-    }
     
     override func display(viewModel: DisplayCard.Information.ViewModel) {
         

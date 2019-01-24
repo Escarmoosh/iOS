@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GeneriqueCompetenceInformationView: NIBView {
+class GeneriqueCompetenceInformationView: UIView, NibLoadable {
     
     func display(viewModel: DisplayCard.Competence.ViewModel) {
         

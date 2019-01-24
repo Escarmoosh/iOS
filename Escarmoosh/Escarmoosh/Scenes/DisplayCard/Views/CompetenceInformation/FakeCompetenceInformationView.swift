@@ -8,15 +8,22 @@
 
 import UIKit
 
+@IBDesignable
 class FakeCompetenceInformationView: GeneriqueCompetenceInformationView {
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupFromNib()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupFromNib()
+    }
     
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var scoreView: GeneriqueCompetenceScoreView!
     @IBOutlet weak var skillsView: UIStackView!
-    
-    override func getNibName() -> String? {
-        return "FakeCompetenceInformationView"
-    }
     
     override func display(viewModel: DisplayCard.Competence.ViewModel) {
         
@@ -25,7 +32,7 @@ class FakeCompetenceInformationView: GeneriqueCompetenceInformationView {
         
         for skill in viewModel.skills {
            
-            let fakeSkillScoreView = FakeSkillScoreView.init(frame: CGRect.zero)
+            let fakeSkillScoreView = FakeSkillScorePercentView.init(frame: CGRect.zero)
             fakeSkillScoreView.display(viewModel: skill)
             skillsView.addArrangedSubview(fakeSkillScoreView)
         }

@@ -23,6 +23,7 @@ enum DisplayCard
             var label: String
             var win: Int
             var total: Int
+            var percentLabel: String
             var scoreLabel: String
         }
     }

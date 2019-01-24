@@ -1,5 +1,5 @@
 //
-//  FakeSkillScoreView.swift
+//  FakeSkillScorePercentView.swift
 //  Escarmoosh
 //
 //  Created by Arnaud Verrier on 23/01/2019.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class FakeSkillScoreView: GeneriqueSkillScoreView {
+class FakeSkillScorePercentView: GeneriqueSkillScoreView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -28,7 +28,7 @@ class FakeSkillScoreView: GeneriqueSkillScoreView {
     override func display(viewModel: DisplayCard.Skill.ViewModel) {
         
         nameLabel.text = viewModel.label
-        scoreLabel.text = viewModel.scoreLabel
+        scoreLabel.text = viewModel.percentLabel
         cstrForScore.setMultiplier(multiplier: CGFloat(viewModel.win)/CGFloat(viewModel.total))
     }
 }

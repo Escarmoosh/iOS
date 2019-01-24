@@ -71,7 +71,7 @@ class DisplayCardPresenter: DisplayCardPresentationLogic
     
     private func presentCardSkill(skill: SkillModel) -> DisplayCard.Skill.ViewModel {
         
-        let skillViewModel = DisplayCard.Skill.ViewModel(label: skill.label, win: skill.win, total: skill.total, scoreLabel: String(skill.win) + "/" + String(skill.total))
+        let skillViewModel = DisplayCard.Skill.ViewModel(label: skill.label, win: skill.win, total: skill.total, percentLabel: String(100*skill.win/skill.total) + "%", scoreLabel: String(skill.win) + "/" + String(skill.total))
         return skillViewModel
     }
 }

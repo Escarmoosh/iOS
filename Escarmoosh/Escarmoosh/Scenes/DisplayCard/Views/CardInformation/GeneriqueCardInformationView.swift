@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GeneriqueCardInformationView: NIBView {
+class GeneriqueCardInformationView: UIView, NibLoadable {
     
     func display(viewModel: DisplayCard.Information.ViewModel) {
         

@@ -8,12 +8,20 @@
 
 import UIKit
 
+@IBDesignable
 class FakeCompetenceScoreView: GeneriqueCompetenceScoreView {
     
-    @IBOutlet weak var cstrWidthForScore: NSLayoutConstraint!
-    override func getNibName() -> String? {
-        return "FakeCompetenceScoreView"
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupFromNib()
     }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupFromNib()
+    }
+    
+    @IBOutlet weak var cstrWidthForScore: NSLayoutConstraint!
     
     override func display(viewModel: DisplayCard.Information.ViewModel) {
         
