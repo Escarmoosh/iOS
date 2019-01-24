@@ -10,6 +10,8 @@
 		09D2229842169A21503D364A /* Pods_EscarmooshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */; };
 		3422169121F9D76000D01A98 /* APIInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422169021F9D76000D01A98 /* APIInjection.swift */; };
 		3422169321F9D81400D01A98 /* ViewInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422169221F9D81400D01A98 /* ViewInjection.swift */; };
+		3422169621FA00A900D01A98 /* FakeCompetenceScoreGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422169421FA00A900D01A98 /* FakeCompetenceScoreGlassView.swift */; };
+		3422169721FA00A900D01A98 /* FakeCompetenceScoreGlassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3422169521FA00A900D01A98 /* FakeCompetenceScoreGlassView.xib */; };
 		3434BCFC21F9BB25004FEF1B /* NIBLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434BCFB21F9BB25004FEF1B /* NIBLoadableView.swift */; };
 		346AC48521F9CE8C009F6896 /* FakeSkillScorePercentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 346AC48321F9CE8B009F6896 /* FakeSkillScorePercentView.xib */; };
 		346AC48621F9CE8C009F6896 /* FakeSkillScorePercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346AC48421F9CE8C009F6896 /* FakeSkillScorePercentView.swift */; };
@@ -84,6 +86,8 @@
 		33397CADA9DEC1094ACAA525 /* Pods-EscarmooshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshUITests.release.xcconfig"; path = "Target Support Files/Pods-EscarmooshUITests/Pods-EscarmooshUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3422169021F9D76000D01A98 /* APIInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInjection.swift; sourceTree = "<group>"; };
 		3422169221F9D81400D01A98 /* ViewInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInjection.swift; sourceTree = "<group>"; };
+		3422169421FA00A900D01A98 /* FakeCompetenceScoreGlassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCompetenceScoreGlassView.swift; sourceTree = "<group>"; };
+		3422169521FA00A900D01A98 /* FakeCompetenceScoreGlassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FakeCompetenceScoreGlassView.xib; sourceTree = "<group>"; };
 		3434BCFB21F9BB25004FEF1B /* NIBLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBLoadableView.swift; sourceTree = "<group>"; };
 		346AC48321F9CE8B009F6896 /* FakeSkillScorePercentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FakeSkillScorePercentView.xib; sourceTree = "<group>"; };
 		346AC48421F9CE8C009F6896 /* FakeSkillScorePercentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSkillScorePercentView.swift; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 				34875E1121F72C5D000DC512 /* GeneriqueCompetenceScoreView.swift */,
 				34A72AE821F74C77002151B9 /* FakeCompetenceScoreView.xib */,
 				34A72AE621F74C6D002151B9 /* FakeCompetenceScoreView.swift */,
+				3422169521FA00A900D01A98 /* FakeCompetenceScoreGlassView.xib */,
+				3422169421FA00A900D01A98 /* FakeCompetenceScoreGlassView.swift */,
 			);
 			path = CompetenceScore;
 			sourceTree = "<group>";
@@ -521,6 +527,7 @@
 			files = (
 				346F00DD21F20F9700673151 /* LaunchScreen.storyboard in Resources */,
 				346F00DA21F20F9700673151 /* Assets.xcassets in Resources */,
+				3422169721FA00A900D01A98 /* FakeCompetenceScoreGlassView.xib in Resources */,
 				34B071BF21F632F200F98C52 /* FakeCardInformationView.xib in Resources */,
 				34F271AF21F8BD9700574830 /* FakeSkillScoreView.xib in Resources */,
 				346AC48521F9CE8C009F6896 /* FakeSkillScorePercentView.xib in Resources */,
@@ -668,6 +675,7 @@
 				34B071C321F6361F00F98C52 /* GeneriqueCardInformationView.swift in Sources */,
 				346F012721F2172D00673151 /* APIHelper.swift in Sources */,
 				34F271B321F8BDBB00574830 /* FakeCompetenceInformationView.swift in Sources */,
+				3422169621FA00A900D01A98 /* FakeCompetenceScoreGlassView.swift in Sources */,
 				346F011C21F2172D00673151 /* Configuration.swift in Sources */,
 				34B071B321F626E700F98C52 /* DisplayCardRouter.swift in Sources */,
 				346F011D21F2172D00673151 /* AlamofireImplementations.swift in Sources */,

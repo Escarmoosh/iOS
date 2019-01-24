@@ -14,7 +14,7 @@ class ViewInjection {
     let container: Container = {
         
         let container = Container()
-        container.register(GeneriqueSkillScoreView.self) { _ in FakeSkillScorePercentView(frame: .zero)}
+        container.register(GeneriqueSkillScoreView.self) { _ in FakeSkillScoreView(frame: .zero)}
         return container
     }()
 }
