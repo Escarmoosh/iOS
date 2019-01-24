@@ -32,7 +32,7 @@ class FakeCompetenceInformationView: GeneriqueCompetenceInformationView {
         
         for skill in viewModel.skills {
            
-            let fakeSkillScoreView = FakeSkillScorePercentView.init(frame: CGRect.zero)
+            let fakeSkillScoreView = AppDelegate.mySelf().viewContainer.resolve(GeneriqueSkillScoreView.self)!
             fakeSkillScoreView.display(viewModel: skill)
             skillsView.addArrangedSubview(fakeSkillScoreView)
         }

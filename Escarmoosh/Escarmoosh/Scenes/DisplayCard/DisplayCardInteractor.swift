@@ -27,7 +27,7 @@ class DisplayCardInteractor: DisplayCardBusinessLogic, DisplayCardDataStore
     var presenter: DisplayCardPresentationLogic?
     var worker: DisplayCardWorker?
     
-    var cardWorker: CardWorker?
+    var cardWorker: CardStoreProtocol?
     //var name: String = ""
     
     // MARK: Do something

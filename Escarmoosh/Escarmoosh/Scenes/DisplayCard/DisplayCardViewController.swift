@@ -54,7 +54,7 @@ class DisplayCardViewController: UITableViewController, DisplayCardDisplayLogic
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
-        interactor.cardWorker = CardWorker(cardStore: CardFakker())
+        interactor.cardWorker = AppDelegate.mySelf().apiContainer.resolve(CardStoreProtocol.self)
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor

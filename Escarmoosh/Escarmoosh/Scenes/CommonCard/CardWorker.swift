@@ -26,7 +26,7 @@ enum CardStoreError: Error {
     case UnkownError
 }
 
-class CardWorker
+/*class CardWorker
 {
     var cardStore: CardStoreProtocol
     
@@ -44,4 +44,4 @@ class CardWorker
     {
         self.cardStore.fetchCards(completionHandler: completionHandler)
     }
-}
+}*/

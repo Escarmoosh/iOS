@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09D2229842169A21503D364A /* Pods_EscarmooshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7822DFF6AA0FC6DC518D0B2F /* Pods_EscarmooshTests.framework */; };
+		3422169121F9D76000D01A98 /* APIInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422169021F9D76000D01A98 /* APIInjection.swift */; };
+		3422169321F9D81400D01A98 /* ViewInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422169221F9D81400D01A98 /* ViewInjection.swift */; };
 		3434BCFC21F9BB25004FEF1B /* NIBLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434BCFB21F9BB25004FEF1B /* NIBLoadableView.swift */; };
 		346AC48521F9CE8C009F6896 /* FakeSkillScorePercentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 346AC48321F9CE8B009F6896 /* FakeSkillScorePercentView.xib */; };
 		346AC48621F9CE8C009F6896 /* FakeSkillScorePercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346AC48421F9CE8C009F6896 /* FakeSkillScorePercentView.swift */; };
@@ -80,6 +82,8 @@
 		129DEF5AA2CF247A8AC33C2A /* Pods-EscarmooshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshTests.release.xcconfig"; path = "Target Support Files/Pods-EscarmooshTests/Pods-EscarmooshTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E67EF77E3F44DD1A43873C2 /* Pods_EscarmooshUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscarmooshUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33397CADA9DEC1094ACAA525 /* Pods-EscarmooshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscarmooshUITests.release.xcconfig"; path = "Target Support Files/Pods-EscarmooshUITests/Pods-EscarmooshUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3422169021F9D76000D01A98 /* APIInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInjection.swift; sourceTree = "<group>"; };
+		3422169221F9D81400D01A98 /* ViewInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInjection.swift; sourceTree = "<group>"; };
 		3434BCFB21F9BB25004FEF1B /* NIBLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBLoadableView.swift; sourceTree = "<group>"; };
 		346AC48321F9CE8B009F6896 /* FakeSkillScorePercentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FakeSkillScorePercentView.xib; sourceTree = "<group>"; };
 		346AC48421F9CE8C009F6896 /* FakeSkillScorePercentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSkillScorePercentView.swift; sourceTree = "<group>"; };
@@ -169,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3422168F21F9D74500D01A98 /* SwiftInjection */ = {
+			isa = PBXGroup;
+			children = (
+				3422169021F9D76000D01A98 /* APIInjection.swift */,
+				3422169221F9D81400D01A98 /* ViewInjection.swift */,
+			);
+			path = SwiftInjection;
+			sourceTree = "<group>";
+		};
 		346F00C321F20F9500673151 = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +339,7 @@
 		34B071B721F6313900F98C52 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3422168F21F9D74500D01A98 /* SwiftInjection */,
 				34A72AF121F7698C002151B9 /* Extension */,
 				34B071B821F6316B00F98C52 /* Generique */,
 			);
@@ -609,12 +623,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Escarmoosh/Pods-Escarmoosh-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -635,6 +651,7 @@
 				34A72AF321F769DE002151B9 /* NSLayoutConstraintExtension.swift in Sources */,
 				34F271A621F8BAED00574830 /* GeneriqueCompetenceInformationView.swift in Sources */,
 				34B071A421F6067200F98C52 /* CardWorker.swift in Sources */,
+				3422169321F9D81400D01A98 /* ViewInjection.swift in Sources */,
 				346F012521F2172D00673151 /* SkillModel.swift in Sources */,
 				34B071B621F626E700F98C52 /* DisplayCardInteractor.swift in Sources */,
 				34B071B121F626E700F98C52 /* DisplayCardPresenter.swift in Sources */,
@@ -656,6 +673,7 @@
 				346F011D21F2172D00673151 /* AlamofireImplementations.swift in Sources */,
 				34B071C121F6330900F98C52 /* FakeCardInformationView.swift in Sources */,
 				346F012221F2172D00673151 /* CardModel.swift in Sources */,
+				3422169121F9D76000D01A98 /* APIInjection.swift in Sources */,
 				346F012821F2172D00673151 /* JSONEncodableEncoding.swift in Sources */,
 				346F00D021F20F9500673151 /* AppDelegate.swift in Sources */,
 				34B071B421F626E700F98C52 /* DisplayCardModels.swift in Sources */,
